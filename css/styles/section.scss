@@ -1,0 +1,23 @@
+.section{
+    background-color: $white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.section__title{
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    // font-size: 48px;
+    font-size: 3rem;
+    // line-height: 52px;
+    line-height: 3.25rem;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+

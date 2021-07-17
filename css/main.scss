@@ -1,0 +1,40 @@
+// $containerWidth: 940px;
+// // $containerWidth: 58.75vw;
+$containerWidth: 90vw;
+
+
+// colors
+$black: #292929;
+$red: #E01F3D;
+$grey: #666666;
+$white:#FFFFFF;
+
+// setups
+@import './layout.scss';
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+
+//styles
+@import './styles/mainpage.scss';
+@import './styles/header.scss';
+@import './styles/burger-menu.scss';
+@import './styles/menu.scss';
+@import './styles/phone-number.scss';
+@import './styles/btns.scss';
+@import './styles/features.scss';
+@import './styles/logo.scss';
+@import './styles/section.scss';
+@import './styles/headline.scss';
+@import './styles/benefits.scss';
+@import './styles/decoration.scss';
+@import './styles/reviews.scss';
+@import './styles/delivery.scss';
+@import './styles/form.scss';
+@import './styles/radio.scss';
+@import './styles/map.scss';
+@import './styles/footer.scss';
+@import './styles/fixed-sidebar.scss';
+@import './sprite.scss';
+
+//media requests
+@import './media.scss';

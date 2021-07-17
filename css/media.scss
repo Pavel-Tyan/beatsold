@@ -1,0 +1,247 @@
+@media(max-width: 768px){
+    html{
+        font-size: 13px;
+    }
+    // 1 section
+    .menu{
+        display: none;
+    }
+    .header__phone-number{
+        display: none !important;
+    }
+    .header{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .burger-menu{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .features{
+        display: flex; 
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+    .mainpage{
+        background: url('/img/pic/headset-beats-tablet.png') left 50% top 20% no-repeat;
+    }
+    .mainpage__icons{
+        display: none;
+    }
+    .mainpage__title{
+        text-align: center;
+         margin-top: 400px;
+    }
+    .mainpage__main-title{
+        margin: 0 auto;
+    }
+    .mainpage__title-description{
+        margin: 0 auto; 
+        margin-bottom: 10px;
+    }
+    .container{
+        width: 98vw;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    // 2 section
+    // .benefits{
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
+    // }
+    .headline__subtitle{ 
+        width: 70%;
+    }
+
+    .benefits__title{
+        margin-top: 0.5rem; 
+        margin-bottom: 0.5rem;
+    }
+
+    .benefits__item{
+        width: auto;
+        margin-bottom: 5rem;
+        &:first-child{
+            margin-right: 0;
+        }
+
+        &:last-child{
+            margin-left: 0;
+        }
+    }
+
+    // 6 section
+    .reviews__display{
+        transform: translate(0%,0%);
+        display: flex;
+        flex-direction: column;
+        // margin-top: 74px;
+        margin-top: 4.625rem;
+    }
+
+    .reviews__content{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .reviews__text p{
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .reviews__title h3{
+        text-align: center;
+        margin: 0 auto;
+        // margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .reviews__owner{
+        text-align: center;
+        margin: 0 auto;
+        // margin-top: 38px;
+        margin-top: 2.375rem;
+    }
+
+    .reviews__avatar{
+        width: 15.8125rem;
+        height: 16.5rem;
+        margin: 0 auto;
+    }
+
+    //  8 section
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form__column{
+        margin-right: 0;
+        width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+            margin-right: 0;
+        }
+    }
+    
+    .form__controls{
+        display: flex;
+        justify-content: center;
+        // margin-top: 20px;
+        margin-top: 1.25rem;
+        // margin-bottom: -7px;
+        margin-bottom: 0.4375rem;
+        &:last-child{
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+    
+    .form__buttons{
+        display: flex;
+        margin: 0 auto;
+        // margin-top: 30px;
+        margin-top: 1.875rem;
+        // width: 300px;
+        width: 18.75rem;
+    }
+    
+    // sidebar
+    .fixed-sidebar{
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 480px){
+    html{
+        font-size: 11px;
+    }
+    
+    // 1 section
+    .menu{
+        display: none;
+    }
+    .phone-number{
+        display: none !important;
+    }
+    .header{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .feature{
+        &:last-child
+        {
+            margin-left: 0;}
+        }
+    .features{
+        display: flex; 
+        justify-content: start; 
+        flex-direction: column;
+    }
+    .mainpage__title{
+        text-align: center;
+         margin-top: 400px;
+    }
+    .mainpage__icons{
+        margin-top: 120.15px;
+    }
+
+    .mainpage{
+        background: url('/img/pic/headset-beats-phone.png') left 50% top 25% no-repeat;
+    }
+    .container{
+        width: 98vw;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .section{
+        margin-top: 0;
+    }
+
+    //footer
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__contacts{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__row{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+
+    .footer__social-nets{
+        display: flex;
+        align-items: center;
+    }
+
+}
