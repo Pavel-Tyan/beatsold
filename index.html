@@ -15,7 +15,7 @@
                 <div class="container mainpage__container">
                     <header class='header'>
                         <img src="./img/icon/beats-logo.svg" alt="beats logo" class='logo'>
-                        <button class='burger-menu'>
+                        <button class='burger-menu' id='burger-btn'>
                             <span class='burger-menu__decoration burger-menu__space'></span>
                             <span class='burger-menu__decoration burger-menu__space'></span>
                             <span class='burger-menu__decoration'></span>
@@ -460,7 +460,52 @@
                 </button>
             </li>
         </ul>
-    </nav>    
+    </nav>
+    <div class="fullscreen-menu">
+        <button class="fullscreen-menu__button" id='closeMenu'>
+            <svg class='close__icon' viewBox="0 0 50 50">
+                <use xlink:href='./img/icon/sprite.svg#close-icon'>
+                </use>
+            </svg>
+        </button>
+        <nav class="vertical-menu">
+            <ul class="vertical-menu__list">
+                <li class="vertical-menu__item">
+                    <a href="#" class='vertical-menu__link'>
+                        О нас
+                    </a>
+                </li>
+                <li class="vertical-menu__item">
+                    <a href="#" class='vertical-menu__link'>
+                        Наушники
+                    </a>
+                </li>
+                <li class="vertical-menu__item">
+                    <a href="#" class='vertical-menu__link'>
+                        Команда
+                    </a>
+                </li>
+                <li class="vertical-menu__item">
+                    <a href="#" class='vertical-menu__link'>
+                        Цвета
+                    </a>
+                </li><li class="vertical-menu__item">
+                    <a href="#" class='vertical-menu__link'>
+                        Отзывы
+                    </a>
+                </li><li class="vertical-menu__item">
+                    <a href="#" class='vertical-menu__link'>
+                        Как мы работаем
+                    </a>
+                </li><li class="vertical-menu__item">
+                    <a href="#" class='vertical-menu__link'>
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="/index.js"></script>
 </body>
     
 </html>
