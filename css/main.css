@@ -348,6 +348,10 @@ html {
           flex-direction: column;
 }
 
+.benefits-section {
+  margin-bottom: 130px;
+}
+
 .benefits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,6 +845,36 @@ html {
   height: 100%;
 }
 
+.product__cogwheel-icon {
+  width: 2.625rem;
+  height: 2.625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.arrow-icon {
+  width: 1.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.dropdown-list__icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .fullscreen-menu {
   position: fixed;
   top: 0;
@@ -900,6 +934,240 @@ html {
   line-height: 3.5rem;
   color: #FFFFFF;
   text-align: center;
+}
+
+.products__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 59.875rem;
+  position: relative;
+}
+
+.products__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__img {
+  margin: 0 auto;
+  width: 28.25rem;
+  height: 28.25rem;
+  margin-bottom: 6rem;
+}
+
+.products__title {
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.products__text {
+  width: 23rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.products__text p {
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #666666;
+}
+
+.products__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 15rem;
+}
+
+.products__characteristics {
+  width: 5.6875rem;
+  height: 5.6875rem;
+  background: #9A9A9A;
+  position: relative;
+  outline: none;
+  border: none;
+  margin-bottom: 1.5625rem;
+}
+
+.products__price {
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.25rem;
+  line-height: 3.75rem;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.products__price-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20.25rem;
+}
+
+.products__info {
+  -webkit-transform: translate(0, -20%);
+          transform: translate(0, -20%);
+  margin: 0 auto;
+}
+
+.products__title-padding {
+  padding-left: 0.5rem;
+}
+
+.product__benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product__benefit-name {
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #666666;
+}
+
+.product__benefit-text {
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #292929;
+}
+
+.arrow {
+  width: 1.5rem;
+  height: 2.5rem;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.arrow-right {
+  -webkit-transform: translate(0, -140%);
+          transform: translate(0, -140%);
+  margin-left: 1rem;
+}
+
+.arrow-left {
+  -webkit-transform: translate(0, -140%);
+          transform: translate(0, -140%);
+  margin-right: 1rem;
+}
+
+.dropdown-list {
+  position: absolute;
+  background: #FFFFFF;
+  width: 17.0625rem;
+  height: 18.375rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translate(33%, -40%);
+          transform: translate(33%, -40%);
+}
+.dropdown-list:hover + .products__characteristics {
+  background: #E01F3D;
+}
+.dropdown-list:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropdown-list__img {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.dropdown-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-list__value {
+  margin-right: 20px;
+}
+
+.dropdown-list__benefit {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-list__name {
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292929;
+}
+
+.dropdown-list__value {
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #292929;
 }
 
 @media (max-width: 768px) {
@@ -1005,6 +1273,32 @@ html {
   }
   .benefits__item:last-child {
     margin-left: 0;
+  }
+
+  .products__characteristics {
+    display: none;
+  }
+
+  .products__title {
+    text-align: center;
+  }
+
+  .products__text {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .products__text p {
+    text-align: center;
+  }
+
+  .products__benefits {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .products__price-info {
+    margin: 0 auto;
   }
 
   .reviews__display {
@@ -1172,6 +1466,13 @@ html {
 
   .section {
     margin-top: 0;
+  }
+
+  .products__img {
+    margin: 0 auto;
+    width: 85%;
+    height: 85%;
+    margin-bottom: 6rem;
   }
 
   .footer {

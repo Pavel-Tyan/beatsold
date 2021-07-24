@@ -1,0 +1,20 @@
+.arrow{
+    width: 1.5rem;
+    height: 2.5rem;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.arrow-right{
+    // transform: translate(-19%,-25%);
+    transform: translate(0,-140%);
+    margin-left: 1rem;
+}
+
+.arrow-left{
+    // transform: translate(-110%,-25%);
+    transform: translate(0,-140%);
+    margin-right: 1rem;
+}

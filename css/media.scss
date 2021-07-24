@@ -50,12 +50,6 @@
     }
 
     // 2 section
-    // .benefits{
-    //     display: flex;
-    //     justify-content: center;
-    //     flex-direction: column;
-    //     flex-wrap: wrap;
-    // }
     .headline__subtitle{ 
         width: 70%;
     }
@@ -75,6 +69,34 @@
         &:last-child{
             margin-left: 0;
         }
+    }
+
+    // 3 section
+
+    .products__characteristics{
+        display: none;
+    }
+
+    .products__title{
+        text-align: center;
+    }
+
+    .products__text{
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        p{
+        text-align: center;
+        }
+    }
+
+    .products__benefits{
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .products__price-info{
+        margin: 0 auto;
     }
 
     // 6 section
@@ -214,6 +236,17 @@
     .section{
         margin-top: 0;
     }
+
+    //3 section
+    .products__img{
+        margin: 0 auto;
+        // width: 20.25rem;
+        width: 85%;
+        // height: 20.25rem;
+        height: 85%;
+        margin-bottom: 6rem;
+    }
+    
 
     //footer
 
