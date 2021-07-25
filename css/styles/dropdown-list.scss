@@ -7,14 +7,6 @@
     flex-direction: column;
     justify-content: space-around;
     transform: translate(33%,-40%);
-    
-    &:hover + .products__characteristics{
-        background: $red;
-    }
-
-    &:hover{
-        display: flex;
-    }
 }
 
 .dropdown-list__img{
