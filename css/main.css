@@ -307,7 +307,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 160px;
+  margin-top: 5rem;
 }
 
 .section__title {
@@ -976,6 +976,7 @@ html {
 }
 
 .products__title {
+  text-align: start;
   font-family: Play;
   font-style: normal;
   font-weight: bold;
@@ -1051,6 +1052,12 @@ html {
 .products {
   height: 100vh;
   background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .product__benefit {
@@ -1280,6 +1287,8 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .products__img {

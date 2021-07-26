@@ -24,6 +24,7 @@
 }
 
 .products__title{
+    text-align: start;
     font-family: Play;
     font-style: normal;
     font-weight: bold;
@@ -94,4 +95,6 @@
 .products{
     height: 100vh;
     background-color: $white;
+    display: flex;
+    justify-content: center;
 }
