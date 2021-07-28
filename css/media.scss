@@ -114,6 +114,24 @@
         margin: 0 auto;
     }
 
+    // 4 section
+    .accordion{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .accordion__item{
+        width: 13.75rem;
+        margin: 0 auto;
+    
+            &:last-child{
+                margin: 0 auto;
+            }
+    }
+    
+
     // 6 section
     .reviews__display{
         transform: translate(0%,0%);

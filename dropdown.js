@@ -1,18 +1,3 @@
-const fullscreenMenu = document.querySelector('.fullscreen-menu');
-const fullscreenMenuOpenBtn = document.querySelector('#burger-btn');
-
-fullscreenMenuOpenBtn.addEventListener('click', e => {
-    fullscreenMenu.style.display = 'flex';
-})
-
-const fullscreenMenuCloseBtn = document.querySelector('#closeMenu');
-
-fullscreenMenuCloseBtn.addEventListener('click', e => {
-    fullscreenMenu.style.display = 'none';
-})
-
-
-
 const dropDownListBtn = document.querySelector('.products__characteristics');
 const dropDownList = document.querySelector('.dropdown-list')
 
@@ -27,8 +12,3 @@ dropDownList.addEventListener('mouseleave', e => {
             dropDownList.style.display = 'none';
         }
 })
-
-
-
-
-
