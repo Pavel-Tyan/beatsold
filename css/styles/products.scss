@@ -2,13 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 auto;
     justify-content: space-between;
-    width: 59.875rem;
+    // width: 59.875rem !important;
+    // width: 59.875rem;
+    // width: 40.875rem;
+
 }
 
 .products__container{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .products__img{
@@ -98,3 +103,17 @@
     display: flex;
     justify-content: center;
 }
+
+.bx-wrapper {
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+    display: flex;
+    justify-content: center;
+    width: 59.875rem !important;
+}
+
+.slider{
+    justify-content: center;
+}
+

@@ -42,3 +42,32 @@
     margin-left: 15px;
     // margin-left: 0.9375rem;
 }
+
+.btn-close{
+    margin: 0 auto;
+    width: 9.8125rem;
+    height: 3.75rem;
+    background: $red;
+    border-radius: 100px;
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    text-align: center;
+    color: $white;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    
+    &:hover{
+        background-color: $white;
+        color: $red;
+        border: 3px solid $red;
+    }
+}
+
+
+
+
+

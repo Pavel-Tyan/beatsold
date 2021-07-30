@@ -1,14 +1,29 @@
-const dropDownListBtn = document.querySelector('.products__characteristics');
-const dropDownList = document.querySelector('.dropdown-list')
+const dropDownListBtn1 = document.querySelector('.products__characteristics');
+const dropDownList1 = document.querySelector('.dropdown-list')
 
-dropDownListBtn.addEventListener('mouseenter', e => {
-        dropDownListBtn.style.backgroundColor = "#E01F3D";
-        dropDownList.style.display = 'flex';
+dropDownListBtn1.addEventListener('mouseenter', e => {
+        dropDownListBtn1.style.backgroundColor = "#E01F3D";
+        dropDownList1.style.display = 'flex';
 })
 
-dropDownList.addEventListener('mouseleave', e => {
-        if(e.target == dropDownList){
-            dropDownListBtn.style.backgroundColor = "#9A9A9A";
-            dropDownList.style.display = 'none';
+dropDownList1.addEventListener('mouseleave', e => {
+        if(e.target == dropDownList1){
+            dropDownListBtn1.style.backgroundColor = "#9A9A9A";
+            dropDownList1.style.display = 'none';
+        }
+})
+
+const dropDownListBtn2 = document.querySelector('.slide-2');
+const dropDownList2 = document.querySelector('.list-2')
+
+dropDownListBtn2.addEventListener('mouseenter', e => {
+        dropDownListBtn2.style.backgroundColor = "#E01F3D";
+        dropDownList2.style.display = 'flex';
+})
+
+dropDownList2.addEventListener('mouseleave', e => {
+        if(e.target == dropDownList2){
+            dropDownListBtn2.style.backgroundColor = "#9A9A9A";
+            dropDownList2.style.display = 'none';
         }
 })

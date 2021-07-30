@@ -1,4 +1,9 @@
+// .reviews{
+//     // position: relative;
+// }
+
 .reviews__display{
+    // position: absolute;
     display: flex;
     // margin-top: 74px;
     padding-top: 35px;
@@ -89,3 +94,10 @@
         border: 5.83711px solid $red;
     }
 }
+
+.review2, .review3{
+    display: none;
+}
+
+
+

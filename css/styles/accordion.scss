@@ -14,8 +14,17 @@
         }
 }
 
-.accordion__button{
+.accordion__decoration{
     width: 9px;
     height: 9px;
     transform: translate(4px, 3px);
+}
+
+.accordion__button{
+    outline: none;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
