@@ -12,6 +12,7 @@
         &:last-child{
             margin-right: 0;
         }
+    position: relative;
 }
 
 .accordion__decoration{
@@ -19,6 +20,8 @@
     height: 9px;
     transform: translate(4px, 3px);
 }
+
+
 
 .accordion__button{
     outline: none;
