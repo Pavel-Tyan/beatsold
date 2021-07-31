@@ -5,6 +5,11 @@
     display: flex;
     justify-content: space-between;
 }
+.footer-container{
+    height: auto !important;
+    min-height: auto;
+    width: $containerWidth;
+}
 
 .footer__contacts{
     display: flex;

@@ -1,7 +1,11 @@
 .mainpage{
     background: url('/img/pic/headset-beats.png') left 70% top 32% no-repeat;
     background-color: $white;
-    height: 100vh;
+    margin: 0 auto;
+    min-height: 100vh;
+    height: auto;
+    align-items: flex-start;
+    // min-height: 100vh;
     // &::before{
     //     content:'';
     //     background: url('/img/pic/headset-beats.png') left 70% top 64% no-repeat;

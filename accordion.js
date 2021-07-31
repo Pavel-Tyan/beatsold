@@ -1,9 +1,9 @@
-
+desktopFontSize='16px';
 $(document).ready( function (e){
     $('.accordion__button').on('click',function(e){
         e.preventDefault();
         currentAcordionBtn = $(this);
-        if($('body').css('font-size')!='16px'){
+        if($('body').css('font-size')!=desktopFontSize){
             if(currentAcordionBtn.siblings().css('display')=='block') {
                 currentAcordionBtn.siblings().slideUp();    
             }

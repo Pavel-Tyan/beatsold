@@ -37,12 +37,12 @@ $('.form').submit( e=> {
             },
             success: data =>{
                 modalContent.text(data.message);
-                $('.modal-window').css('display','flex');
+                modalWindowShow();
             },
             error: data =>{
                 const message = data.responseJSON.message
                 modalContent.text(message);
-                $('.modal-window').css('display','flex');
+                modalWindowShow()
             }
     });
     }
