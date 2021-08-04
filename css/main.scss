@@ -2,6 +2,8 @@
 // $containerWidth: 940px;
 // // $containerWidth: 58.75vw;
 $containerWidth: 90vw;
+$horizAccordionElemWidth: 6.375rem;
+$footerHeight: 5.375rem;
 
 
 // colors
@@ -45,6 +47,12 @@ $white:#FFFFFF;
 @import './styles/dropdown-list.scss';
 @import './styles/accordion.scss';
 @import './styles/team-member.scss';
+@import './styles/colors.scss';
+@import './styles/color.scss';
+@import './styles/video.scss';
+@import './styles/sound.scss';
+
+
 
 
 

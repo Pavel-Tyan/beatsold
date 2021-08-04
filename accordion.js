@@ -1,4 +1,4 @@
-desktopFontSize='16px';
+const desktopFontSize='16px';
 $(document).ready( function (e){
     $('.accordion__button').on('click',function(e){
         e.preventDefault();
