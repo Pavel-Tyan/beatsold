@@ -12,50 +12,60 @@
 </head>
 <body>
     <div class="wrapper">
+        <button class='burger-menu' id='burger-btn'>
+            <span class='burger-menu__decoration burger-menu__space'></span>
+            <span class='burger-menu__decoration burger-menu__space'></span>
+            <span class='burger-menu__decoration'></span>
+        </button>
         <div class='maincontent'>
-            <section class="mainpage">
+            <!-- <button class='burger-menu' id='burger-btn'>
+                <span class='burger-menu__decoration burger-menu__space'></span>
+                <span class='burger-menu__decoration burger-menu__space'></span>
+                <span class='burger-menu__decoration'></span>
+            </button> -->
+            <section class="mainpage" data-section-name='mainpage'>
                 <div class="container mainpage__container">
                     <header class='header'>
                         <img src="./img/icon/beats-logo.svg" alt="beats logo" class='logo'>
-                                <button class='burger-menu' id='burger-btn'>
+                                <!-- <button class='burger-menu' id='burger-btn'>
                                     <span class='burger-menu__decoration burger-menu__space'></span>
                                     <span class='burger-menu__decoration burger-menu__space'></span>
                                     <span class='burger-menu__decoration'></span>
-                                </button>
+                                </button> -->
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#" class="menu__link" data-scroll-to-section='mainpage'>
                                         О нас
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#" class="menu__link" data-scroll-to-section='benefits'>
                                         Наушники
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#" class="menu__link" data-scroll-to-section='products'>
                                         Команда
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#" class="menu__link" data-scroll-to-section='color'>
                                         Цвета
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#" class="menu__link" data-scroll-to-section='reviews'>
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#" class="menu__link" data-scroll-to-section='video'>
                                         Как мы работаем
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="#" class="menu__link" data-scroll-to-section='map'>
                                         Контакты
                                     </a>
                                 </li>
@@ -75,7 +85,7 @@
                         <p class='mainpage__title-description'>
                             Встречайте новую версию наушников из линейки Powerbeats.
                         </p>
-                        <button class="btn-order btn-order-red">
+                        <button class="btn-order btn-order-red" data-scroll-to-section='delivery'>
                             Заказать
                         </button>
                     </div>
@@ -125,7 +135,7 @@
                 </div>
                 <!-- <div class='grey-rectangle'></div> -->
             </section>
-            <section class='section benefits-section'>
+            <section class='section benefits-section' data-section-name='benefits'>
                 <div class="container benefits-container">
                     <div class="headline">
                         <h2 class="section__title headline__title">
@@ -207,7 +217,7 @@
                 </div>
             </section>
             <!-- a -->
-            <section class='products'>
+            <section class='products' data-section-name='products'>
                 <div class="container products__container">
                     <div class='slider'>
                         <div class="products__content">
@@ -341,7 +351,7 @@
                                     <div class="products__price">
                                         14 990 ₽
                                     </div>
-                                    <button class='btn-order btn-order-red'>
+                                    <button class='btn-order btn-order-red' data-scroll-to-section='delivery'>
                                         Заказать
                                     </button>
                                 </div>
@@ -480,7 +490,7 @@
                                     <div class="products__price">
                                         14 990 ₽
                                     </div>
-                                    <button class='btn-order btn-order-red'>
+                                    <button class='btn-order btn-order-red' data-scroll-to-section='delivery'>
                                         Заказать
                                     </button>
                                 </div>
@@ -504,7 +514,7 @@
                 </div>
             </section>
             <!-- a -->
-            <section class='section'>
+            <section class='section' data-section-name='team'>
                 <div class="container">
                     <h2 class="section__title">
                         команда
@@ -611,7 +621,7 @@
                     </div>
                 </div>
             </section>
-            <section class='colors'>
+            <section class='colors' data-section-name='color'>
                 <div class="colors__container">
                     <div class="container container__title">
                         <div class="colors__title">
@@ -714,7 +724,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section reviews__section">
+            <section class="section reviews__section" data-section-name='reviews'>
                 <div class="container">
                         <h2 class="section__title">
                             отзывы
@@ -812,7 +822,7 @@
                         </div>
                 </div>
             </section>
-            <section class='section video'>
+            <section class='section video' data-section-name='video'>
                 <div class="container">
                     <h2 class="section__title">
                         Как мы работаем
@@ -892,7 +902,7 @@
                     </div> -->
                 </div>
             </section>
-            <section class='section delivery'>
+            <section class='section delivery' data-section-name='delivery'>
                 <div class='red-polygon'>
                     <img src="/img/icon/Polygon-red.svg" alt="decoration">
                 </div>
@@ -1002,7 +1012,7 @@
                     </div> -->
                 </div>
             </section>
-            <section class='map'>               
+            <section class='map' data-section-name='map'>               
                 <!-- <div class="container">
 
                 </div> -->
@@ -1066,48 +1076,48 @@
     <nav class="fixed-sidebar">
         <ul class="fixed-sidebar__list">
             <li class="fixed-sidebar__item">
-                <button class="fixed-sidebar__button">
+                <button class="fixed-sidebar__button" data-scroll-to-section='mainpage'>
+                    <div class="fixed-sidebar__active-button"></div>
+                </button>
+            </li>
+            <li class="fixed-sidebar__item">
+                <button class="fixed-sidebar__button" data-scroll-to-section='benefits'>
+                    <div class="fixed-sidebar__active-button"></div>
+                </button>
+            </li>
+            <li class="fixed-sidebar__item">
+                <button class="fixed-sidebar__button" data-scroll-to-section='products'>
                     <div class="fixed-sidebar__active-button"></div>
                 </button>
             </li>
             <li class="fixed-sidebar__item">
                 <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
+                    <div class="fixed-sidebar__active-button" data-scroll-to-section='team'></div>
                 </button>
             </li>
             <li class="fixed-sidebar__item">
                 <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
+                    <div class="fixed-sidebar__active-button" data-scroll-to-section='color'></div>
                 </button>
             </li>
             <li class="fixed-sidebar__item">
                 <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
+                    <div class="fixed-sidebar__active-button" data-scroll-to-section='reviews'></div>
                 </button>
             </li>
             <li class="fixed-sidebar__item">
                 <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
+                    <div class="fixed-sidebar__active-button" data-scroll-to-section='video'></div>
                 </button>
             </li>
             <li class="fixed-sidebar__item">
                 <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
+                    <div class="fixed-sidebar__active-button" data-scroll-to-section='delivery'></div>
                 </button>
             </li>
             <li class="fixed-sidebar__item">
                 <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
-                </button>
-            </li>
-            <li class="fixed-sidebar__item">
-                <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
-                </button>
-            </li>
-            <li class="fixed-sidebar__item">
-                <button class="fixed-sidebar__button">
-                    <div class="fixed-sidebar__active-button"></div>
+                    <div class="fixed-sidebar__active-button" data-scroll-to-section='map'></div>
                 </button>
             </li>
         </ul>
@@ -1131,34 +1141,34 @@
         <nav class="vertical-menu">
             <ul class="vertical-menu__list">
                 <li class="vertical-menu__item">
-                    <a href="#" class='vertical-menu__link'>
+                    <a href="#" class='vertical-menu__link' data-scroll-to-section='mainpage'>
                         О нас
                     </a>
                 </li>
                 <li class="vertical-menu__item">
-                    <a href="#" class='vertical-menu__link'>
+                    <a href="#" class='vertical-menu__link' data-scroll-to-section='benefits'>
                         Наушники
                     </a>
                 </li>
                 <li class="vertical-menu__item">
-                    <a href="#" class='vertical-menu__link'>
+                    <a href="#" class='vertical-menu__link' data-scroll-to-section='team'>
                         Команда
                     </a>
                 </li>
                 <li class="vertical-menu__item">
-                    <a href="#" class='vertical-menu__link'>
+                    <a href="#" class='vertical-menu__link' data-scroll-to-section='products'> 
                         Цвета
                     </a>
                 </li><li class="vertical-menu__item">
-                    <a href="#" class='vertical-menu__link'>
+                    <a href="#" class='vertical-menu__link' data-scroll-to-section='reviews'>
                         Отзывы
                     </a>
                 </li><li class="vertical-menu__item">
-                    <a href="#" class='vertical-menu__link'>
+                    <a href="#" class='vertical-menu__link' data-scroll-to-section='video'>
                         Как мы работаем
                     </a>
                 </li><li class="vertical-menu__item">
-                    <a href="#" class='vertical-menu__link'>
+                    <a href="#" class='vertical-menu__link' data-scroll-to-section='map'>
                         Контакты
                     </a>
                 </li>
@@ -1178,6 +1188,7 @@
     <script src='/delivery-modal-window.js'></script>
     <script src='/form-valid.js'></script>
     <script src='/video.js'></script>
+    <script src='/onepagescroll.js'></script>
 </body>
     
 </html>

@@ -32,4 +32,8 @@
     // line-height: 20px;
     line-height: 1.25rem;
     color: $black;
+
+    &:hover{
+        text-decoration: underline;
+    }
 }

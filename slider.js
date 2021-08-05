@@ -1,7 +1,8 @@
 $(document).ready(function(){
     const slider = $('.slider').bxSlider({
         pager: false,
-        controls: false
+        controls: false,
+        touchEnabled: false
     });
     $('.arrow-left').click( e =>{
         e.preventDefault();

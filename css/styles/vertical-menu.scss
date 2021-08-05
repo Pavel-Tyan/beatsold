@@ -23,4 +23,8 @@
     line-height: 3.5rem;
     color: $white;
     text-align: center;
+    
+    &:hover{
+        text-decoration: underline;
+    }
 }

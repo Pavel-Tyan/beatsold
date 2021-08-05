@@ -4,13 +4,15 @@
 .benefits{
     display: flex;
     justify-content: center;
+    // justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .benefits{
     text-align: center;
     // margin-right: 60px;
-    margin-right: 3.75rem;
+    // margin-right: 3.75rem;
     &:last-child{
         margin-right: 0;
     }
@@ -52,16 +54,16 @@
     width: 17.1875rem;
     // margin-bottom: 2rem;
     // margin-bottom: 5.625rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     
-    &:first-child{
-        margin-right: 4.0625rem;
-        // margin-right: 2.03rem;
-    }
+    // &:first-child{
+    //     margin-right: 4.0625rem;
+    //     // margin-right: 2.03rem;
+    // }
 
-    &:last-child{
-        margin-left: 3.4375rem;
-    }
+    // &:last-child{
+    //     margin-left: 3.4375rem;
+    // }
 }
 
 .benefits__img{
