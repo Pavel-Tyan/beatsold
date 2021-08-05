@@ -9,7 +9,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 100vw;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,11 +23,20 @@ body {
           flex-direction: column;
 }
 
+.maincontent {
+  height: 100vh;
+  width: 100%;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background: transparent;
+}
+
 .container {
   max-width: 90vw;
   width: auto;
   margin: 0 auto;
   height: auto;
+  max-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,6 +78,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  overflow: hidden;
   height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -80,11 +90,10 @@ html {
 }
 
 .mainpage {
-  background: url("/img/pic/headset-beats.png") left 120% top 50% no-repeat, url("/img/icon/Rectangle-grey.svg") right 0% top 100% no-repeat;
+  background: url("/img/pic/headset-beats.png") left 90% top 50% no-repeat, url("/img/icon/Rectangle-grey.svg") right 10% top 100% no-repeat;
   background-color: #FFFFFF;
   margin: 0 auto;
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -101,7 +110,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 97vh;
+  min-height: 100%;
 }
 
 .mainpage__main-title {
@@ -143,7 +152,7 @@ html {
   outline: none;
   border: none;
   position: fixed;
-  right: 0%;
+  right: 5%;
   z-index: 10;
 }
 
@@ -343,6 +352,9 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section__title {
@@ -428,7 +440,7 @@ html {
 
 .benefits__item {
   width: 17.1875rem;
-  margin-bottom: 5.625rem;
+  margin-bottom: 4rem;
 }
 .benefits__item:first-child {
   margin-right: 4.0625rem;
@@ -552,8 +564,7 @@ html {
 
 .delivery {
   background-image: url(/img/pic/delivery-bg.png);
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -793,7 +804,8 @@ html {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: calc(100vh - 5.375rem);
+  height: 100vh;
+  position: relative;
 }
 
 .footer {
@@ -858,6 +870,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__content {
+  width: 100%;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: 0;
 }
 
 .fixed-sidebar {
@@ -1188,8 +1207,7 @@ html {
 }
 
 .products {
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1819,6 +1837,15 @@ html {
   height: 0.7rem;
 }
 
+@media (max-width: 952px) {
+  .products__characteristics {
+    display: none;
+  }
+
+  .products__img {
+    margin-bottom: 3rem;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 13px;
@@ -1920,12 +1947,29 @@ html {
   }
 
   .headline__subtitle {
-    width: 70%;
+    width: 80%;
+  }
+
+  .headline {
+    margin-bottom: 5%;
   }
 
   .benefits__title {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+
+  .benefits-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .benefits {
@@ -1945,7 +1989,7 @@ html {
 
   .benefits__item {
     width: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
   .benefits__item:first-child {
     margin-right: 0;

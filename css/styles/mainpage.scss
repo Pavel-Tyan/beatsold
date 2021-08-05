@@ -1,9 +1,11 @@
 .mainpage{
-    background: url('/img/pic/headset-beats.png') left 120% top 50% no-repeat, url('/img/icon/Rectangle-grey.svg') right 0% top 100% no-repeat;
+    // background: url('/img/pic/headset-beats.png') left 120% top 50% no-repeat, url('/img/icon/Rectangle-grey.svg') right 0% top 100% no-repeat;
+    background: url('/img/pic/headset-beats.png') left 90% top 50% no-repeat, url('/img/icon/Rectangle-grey.svg') right 10% top 100% no-repeat;
     background-color: $white;
     margin: 0 auto;
-    min-height: 100vh;
-    height: auto;
+    // min-height: 100vh;
+    // height: auto;
+    height: 100vh;
     align-items: flex-start;
 }
 
@@ -11,7 +13,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 97vh;
+    min-height: 100%;
+    // height: auto;
 }
 
 // .mainpage__icons{

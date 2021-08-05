@@ -9,6 +9,7 @@
     height: auto !important;
     min-height: auto;
     width: $containerWidth;
+    
 }
 
 .footer__contacts{
@@ -63,5 +64,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer__content{
+    width: 100%;
+    background: $white;
+    position: absolute;
+    bottom: 0;
 }
 
