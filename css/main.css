@@ -92,7 +92,7 @@ html {
 }
 
 .mainpage {
-  background: url("/img/pic/headset-beats.png") left 90% top 50% no-repeat, url("/img/icon/Rectangle-grey.svg") right 10% top 100% no-repeat;
+  background: url("/img/pic/headset-beats.png") left 80% top 50% no-repeat, url("/img/icon/Rectangle-grey.svg") right 10% top 100% no-repeat;
   background-color: #FFFFFF;
   margin: 0 auto;
   height: 100vh;
@@ -463,6 +463,15 @@ html {
   height: 50.63px;
   right: 10%;
   top: -3.3%;
+  background: transparent;
+}
+
+.red-polygon1 {
+  position: absolute;
+  width: 50.63px;
+  height: 50.63px;
+  right: 10%;
+  bottom: -603%;
   background: transparent;
 }
 
@@ -895,14 +904,14 @@ html {
   outline: none;
   position: relative;
 }
-.fixed-sidebar__button:focus {
+.fixed-sidebar__button:hover {
   border: 1px solid #E01F3D;
 }
-.fixed-sidebar__button:focus .fixed-sidebar__active-button {
+.fixed-sidebar__button:hover .fixed-sidebar__active-decoration {
   background-color: #E01F3D;
 }
 
-.fixed-sidebar__active-button {
+.fixed-sidebar__active-decoration {
   width: 7px;
   height: 7px;
   background-color: #666666;
@@ -912,6 +921,13 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
+}
+
+.fixed-sidebar__active {
+  border: 1px solid #E01F3D;
+}
+.fixed-sidebar__active .fixed-sidebar__active-decoration {
+  background-color: #E01F3D;
 }
 
 .sound-icon {
@@ -1843,6 +1859,62 @@ html {
     font-size: 13px;
   }
 
+  section {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .mainpage {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .products {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .section {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .colors {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .reviews__section {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .video {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .delivery {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .map {
+    min-height: 100%;
+    height: 100%;
+  }
+
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1889,9 +1961,7 @@ html {
   }
 
   .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1900,11 +1970,8 @@ html {
   }
 
   .mainpage {
+    height: 100%;
     background: url("/img/pic/headset-beats-tablet.png") left 50% top 20% no-repeat;
-  }
-
-  .mainpage__icons {
-    display: none;
   }
 
   .mainpage__title {
@@ -2258,9 +2325,7 @@ html {
   }
 
   .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;

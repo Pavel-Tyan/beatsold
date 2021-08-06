@@ -15,15 +15,15 @@
     border: 1px solid transparent;
     outline: none;
     position: relative;
-    &:focus{
+    &:hover{
         border: 1px solid $red;
-        .fixed-sidebar__active-button{
+        .fixed-sidebar__active-decoration{
             background-color: $red;
         }
     }
 }
 
-.fixed-sidebar__active-button{
+.fixed-sidebar__active-decoration{
     width: 7px;
     height: 7px;
     background-color: $grey;
@@ -32,4 +32,11 @@
     top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
+}
+
+.fixed-sidebar__active{
+    border: 1px solid $red;
+    .fixed-sidebar__active-decoration{
+        background-color: $red;
+    }
 }
