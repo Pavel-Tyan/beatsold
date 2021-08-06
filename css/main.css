@@ -809,12 +809,23 @@ html {
 }
 
 .map {
-  background-image: url(/img/pic/map.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
   height: 100vh;
   position: relative;
+}
+
+.map__container {
+  height: calc(100vh - 5.375rem);
+  width: 100%;
+  position: absolute;
 }
 
 .footer {
