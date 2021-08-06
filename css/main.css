@@ -1872,62 +1872,6 @@ html {
     font-size: 13px;
   }
 
-  section {
-    min-height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 100%;
-    overflow: hidden;
-    height: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .mainpage {
-    min-height: 100%;
-    height: 100%;
-  }
-
-  .products {
-    min-height: 100%;
-    height: 100%;
-  }
-
-  .section {
-    min-height: 100%;
-    height: 100%;
-  }
-
-  .colors {
-    min-height: 100%;
-    height: 100%;
-  }
-
-  .reviews__section {
-    min-height: 100%;
-    height: 100%;
-  }
-
-  .video {
-    min-height: 100%;
-    height: 100%;
-  }
-
-  .delivery {
-    min-height: 100%;
-    height: 100%;
-  }
-
-  .map {
-    min-height: 100%;
-    height: 100%;
-  }
-
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
