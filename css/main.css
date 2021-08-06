@@ -589,6 +589,7 @@ html {
 .delivery__headline {
   margin-bottom: 3.75rem;
   padding-top: 4.25rem;
+  z-index: 10;
 }
 .delivery__headline h2 {
   font-family: Play;
@@ -897,6 +898,7 @@ html {
   background: #FFFFFF;
   position: absolute;
   bottom: 0;
+  z-index: 40;
 }
 
 .fixed-sidebar {
@@ -1985,13 +1987,29 @@ html {
     background: url("/img/pic/headset-beats-tablet.png") left 50% top 20% no-repeat;
   }
 
+  .mainpage__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+    height: calc(100vh - 50px);
+  }
+
   .mainpage__title {
     text-align: center;
-    margin-top: 400px;
+    margin: 0 auto;
+    margin-bottom: 0.8%;
   }
 
   .mainpage__main-title {
     margin: 0 auto;
+  }
+
+  .mainpage__container {
+    position: relative;
   }
 
   .mainpage__title-description {
@@ -2021,12 +2039,12 @@ html {
   }
 
   .headline {
-    margin-bottom: 5%;
+    margin-bottom: 0.3rem;
   }
 
   .benefits__title {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .benefits-container {
@@ -2050,22 +2068,24 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 6.425rem);
   }
 
   .benefits__item {
     width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
     margin-bottom: 1rem;
-  }
-  .benefits__item:first-child {
-    margin-right: 0;
-  }
-  .benefits__item:last-child {
-    margin-left: 0;
   }
 
   .arrows {
@@ -2084,19 +2104,27 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-height: 100vh;
   }
 
   .products__img {
     margin-right: 0;
     margin: 0 auto;
-    width: auto;
-    height: auto;
-    margin-bottom: 6rem;
+    width: 15.75rem;
+    height: 15.75rem;
+    z-index: -100;
+    margin-bottom: 0.4rem;
+  }
+  .products__img picture, .products__img img {
+    width: 100%;
+    height: 100%;
   }
 
   .products__characteristics {
@@ -2148,6 +2176,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 80vh;
   }
 
   .accordion__item {
@@ -2165,25 +2194,43 @@ html {
     margin: 0 auto;
   }
 
+  .accordion__container {
+    max-width: 90vw;
+    width: auto;
+    margin: 0 auto;
+    height: auto;
+    max-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
   .team-member-photo {
     display: none;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    height: 62%;
   }
 
   .accordion__button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
   }
 
   .team-member__work-info {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     position: static;
   }
 
@@ -2211,7 +2258,24 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 4.625rem;
+    margin-top: 0;
+  }
+
+  .reviews__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .reviews__switcher {
+    margin-top: 3%;
   }
 
   .review2, .review3 {
@@ -2221,6 +2285,7 @@ html {
   .reviews__content {
     margin: 0 auto;
     width: 100%;
+    padding-top: 3%;
   }
 
   .reviews__text p {
@@ -2232,13 +2297,13 @@ html {
   .reviews__title h3 {
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2%;
   }
 
   .reviews__owner {
     text-align: center;
     margin: 0 auto;
-    margin-top: 2.375rem;
+    margin-top: 3%;
   }
 
   .reviews__avatar {
@@ -2254,6 +2319,25 @@ html {
     position: relative;
   }
 
+  .delivery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .delivery__headline {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin: 0 auto;
+  }
+
   .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2265,6 +2349,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0 auto;
   }
 
   .form__column {
@@ -2288,8 +2373,8 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 1.25rem;
-    margin-bottom: 0.4375rem;
+    margin-top: 0.1vh;
+    margin-bottom: 0.1vh;
   }
   .form__controls:last-child {
     margin-bottom: 0;
@@ -2301,8 +2386,12 @@ html {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    margin-top: 1.875rem;
+    margin-top: 2vh;
     width: 18.75rem;
+  }
+
+  .form__input {
+    height: 6vh;
   }
 
   .fixed-sidebar {
@@ -2344,11 +2433,6 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-
-  .mainpage__title {
-    text-align: center;
-    margin-top: 400px;
   }
 
   .mainpage__icons {
