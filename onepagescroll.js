@@ -4,6 +4,9 @@ const display = $('.maincontent');
 const fixedMenu = $('.fixed-sidebar');
 //
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
 sections.first().addClass('active');
@@ -107,32 +110,33 @@ $('[data-scroll-to-section]').on('click', e => {
     $('html').css('overflow-y','visible');
 });
 
-// https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-$(function() {
-$("body").swipe( {
-    //Generic swipe handler for all directions
-    swipe:function(
-        event, 
-        direction) {
-        const scroller = viewportScroller();
-        let scrollDirection ='';
-        // if(direction = 'up'){
-        //     scrollDirection = 'next';
-        // }
-        // else if(direction = 'down'){
-        //     scrollDirection = 'prev';
-        // }
-        switch(direction){
-            case 'up':
-                scrollDirection = 'next';
-                break;
-    
-            case 'down':
-                scrollDirection = 'prev';
-                break;
-           }
 
-        scroller[scrollDirection]();
-    },
-  });
-});
+if(isMobile){
+    
+        $("body").swipe( {
+            //Generic swipe handler for all directions
+            swipe:function(
+                event, 
+                direction) {
+                const scroller = viewportScroller();
+                let scrollDirection ='';
+                // if(direction = 'up'){
+                //     scrollDirection = 'next';
+                // }
+                // else if(direction = 'down'){
+                //     scrollDirection = 'prev';
+                // }
+                switch(direction){
+                    case 'up':
+                        scrollDirection = 'next';
+                        break;
+            
+                    case 'down':
+                        scrollDirection = 'prev';
+                        break;
+                   }
+        
+                scroller[scrollDirection]();
+            },
+          });
+}
