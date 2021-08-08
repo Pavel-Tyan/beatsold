@@ -2017,7 +2017,7 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    height: calc(100vh - 6.425rem);
+    height: calc(100vh - 25.425rem);
   }
 
   .benefits__item {
@@ -2134,6 +2134,7 @@ html {
             flex-direction: column;
     width: 13.75rem;
     margin: 0 auto;
+    margin-bottom: 1rem;
   }
   .accordion__item:last-child {
     margin: 0 auto;
@@ -2422,16 +2423,34 @@ html {
     padding-left: 0;
   }
 
+  .arrow {
+    width: 1.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
   .arrow-right {
-    -webkit-transform: translate(-150%, -140%);
-            transform: translate(-150%, -140%);
-    margin-left: 0;
+    -webkit-transform: translate(0, -25%);
+            transform: translate(0, -25%);
   }
 
   .arrow-left {
-    -webkit-transform: translate(150%, -140%);
-            transform: translate(150%, -140%);
-    margin-left: 0;
+    -webkit-transform: translate(0, -25%);
+            transform: translate(0, -25%);
+  }
+
+  .arrows {
+    margin: 0 auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: transparent;
   }
 
   .footer {
@@ -2484,6 +2503,14 @@ html {
 @media (max-height: 576px) {
   html {
     font-size: 8px;
+  }
+
+  .benefits {
+    height: calc(100vh - 22.425rem);
+  }
+
+  .accordion__item {
+    margin-bottom: 0;
   }
 
   .reviews__avatar {

@@ -155,7 +155,10 @@
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
-        height: calc(100vh - 6.425rem);
+        // height: calc(100vh - 6.425rem);
+        // height: calc(100vh - 7.425rem);
+        height: calc(100vh - 25.425rem);
+
         // border: 1px solid black;
     }
 
@@ -264,6 +267,7 @@
             &:last-child{
                 margin: 0 auto;
             }
+        margin-bottom: 1rem;
     }
 
     .accordion__container{
@@ -505,6 +509,13 @@
         margin-top: 0;
     }
 
+    //2 section
+    // .benefits{
+    //     height: calc(100vh - 25.425rem);
+
+    //     // border: 1px solid black;
+    // }
+
     //3 section
     .products__container{
         margin: 0 auto;
@@ -528,17 +539,50 @@
         padding-left: 0;
     }
     
+    // .arrow-right{
+    //     // transform: translate(-19%,-25%);
+    //     transform: translate(-150%,-140%);
+    //     margin-left: 0;
+    // }
+    
+    // .arrow-left{
+    //     // transform: translate(-110%,-25%);
+    //     transform: translate(150%,-140%);
+    //     margin-left: 0;
+    // }
+    //
+    .arrow{
+        width: 1.5rem;
+        height: 2.5rem;
+        // position: relative;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
     .arrow-right{
-        // transform: translate(-19%,-25%);
-        transform: translate(-150%,-140%);
-        margin-left: 0;
+        transform: translate(0,-25%);
+        // transform: translate(0,-140%);
+        // margin-left: 1rem !important;
+        // margin-right: 5px !important;
     }
     
     .arrow-left{
-        // transform: translate(-110%,-25%);
-        transform: translate(150%,-140%);
-        margin-left: 0;
+        transform: translate(0,-25%);
+        // transform: translate(0,-140%);
+        // margin-right: 1rem !important;
+        // margin-left: 5px !important;
     }
+    
+    .arrows{
+        margin: 0 auto;
+        width: 100%;
+        // position: absolute;
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+    }
+    //
     
     // 5 section
 
@@ -578,6 +622,17 @@
         font-size: 8px;
     }
 
+    // 2 section 
+    .benefits{
+        height: calc(100vh - 22.425rem);
+    }
+
+    // 4 section
+    .accordion__item{
+        margin-bottom: 0;
+    }
+
+    // 6 section
     .reviews__avatar{
         width: 12.8125rem;
         height: 12.5rem;

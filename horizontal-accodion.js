@@ -44,6 +44,14 @@
 //   currentHorizAccordionItem.closest('.color').find('.color__text').addClass('active-horizontal-accordion-item');
 // };
 
+
+
+
+
+
+
+
+
 $(document).ready(function(e){
   $('.color__main-info-btn').on('click',function(e){
     e.preventDefault();
@@ -81,6 +89,10 @@ function closeHorizAccordionItems(){
 function openHorizAccordionItems(currentHorizAccordionItem){
   $(currentHorizAccordionItem).closest('.color').find('.color__text').addClass('active-horizontal-accordion-item');
 };
+
+
+
+
 
 
 
