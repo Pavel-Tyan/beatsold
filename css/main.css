@@ -1872,6 +1872,62 @@ html {
     font-size: 13px;
   }
 
+  section {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .mainpage {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .products {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .section {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .colors {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .reviews__section {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .video {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .delivery {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  .map {
+    min-height: 100%;
+    height: 100%;
+  }
+
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1939,7 +1995,7 @@ html {
         -ms-flex-align: end;
             align-items: flex-end;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100% - 50px);
   }
 
   .mainpage__title {
@@ -2017,7 +2073,7 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
-    height: calc(100vh - 25.425rem);
+    height: calc(100% - 25.425rem);
   }
 
   .benefits__item {
@@ -2055,7 +2111,7 @@ html {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    max-height: 100vh;
+    max-width: 100%;
   }
 
   .products__img {
@@ -2120,7 +2176,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 80vh;
+    height: 80%;
     margin-top: 0;
   }
 
@@ -2274,7 +2330,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh !important;
+    height: 100% !important;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -2506,7 +2562,7 @@ html {
   }
 
   .benefits {
-    height: calc(100vh - 22.425rem);
+    height: calc(100% - 22.425rem);
   }
 
   .accordion__item {
